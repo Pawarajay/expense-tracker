@@ -1,0 +1,35 @@
+/* ---------- Line Chart Styling ---------- */
+.line-chart-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px;
+}
+
+.line-chart-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
+  animation: fadeIn 0.8s ease forwards;
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .line-chart-card {
+  background: rgba(28, 31, 38, 0.85);
+}
+
+.line-chart-card h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.line-chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,34 @@
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.export-buttons button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.export-buttons button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}

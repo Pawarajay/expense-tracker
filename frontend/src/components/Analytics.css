@@ -1,0 +1,76 @@
+/* ================================
+   ANALYTICS DASHBOARD STYLING
+================================== */
+
+.analytics-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff, #e9f9ff);
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.analytics-title {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 40px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.chart-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  transition: all 0.3s ease;
+  text-align: center;
+  animation: fadeInUp 0.8s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.chart-card h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .analytics-page {
+    padding: 20px;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-card {
+    padding: 20px;
+  }
+}
